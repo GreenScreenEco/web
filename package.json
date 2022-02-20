@@ -1,6 +1,6 @@
 {
-  "name": "next-netlify-starter",
-  "version": "0.5.0",
+  "name": "greenscreen-web",
+  "version": "1",
   "private": true,
   "scripts": {
     "dev": "next dev",
