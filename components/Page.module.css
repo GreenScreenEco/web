@@ -1,0 +1,15 @@
+.single {
+  margin: 4em;
+}
+
+.columns {
+  margin: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.columns > * {
+  width: 500pt;
+}
