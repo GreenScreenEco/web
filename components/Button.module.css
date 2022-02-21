@@ -1,0 +1,8 @@
+.button {
+  color: var(--theme-green);
+  padding: 0.15em 1em 0.15em 1em;
+  border-width: 0.1em;
+  border-style: solid;
+  border-color: var(--theme-green);
+  border-radius: 0.4em;
+}

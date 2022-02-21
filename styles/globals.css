@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
   font-family: Readex Pro;
   src: url("/fonts/ReadexPro-Medium.ttf");
@@ -10,29 +12,70 @@
   font-weight: bold;
 }
 
+/* Shared Theme */
+
+:root {
+  --theme-green: #E6FECC;
+  --theme-green-alt: #80C080;
+  --theme-fg-most: #FFFFFF;
+  --theme-bg-most: #404040;
+  --theme-bg-medium: #666666;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Essential Page Setup */
+
 html, body {
   padding: 0;
   margin: 0;
   font-family: Readex Pro, sans-serif;
+  font-size: 16pt;
+  color: var(--theme-fg-most);
+  background-color: var(--theme-bg-medium);
 }
 
 * {
   box-sizing: border-box;
 }
 
-main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.6em;
+  margin-bottom: 0.4em;
+  width: fit-content;
+  font-weight: normal;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+h1 {
+  font-size: 60pt;
+  color: transparent;
+  background: linear-gradient(125deg, var(--theme-green) 0%, var(--theme-green-alt) 100%);
+  -webkit-background-clip: text;
+}
+
+h2 {
+  font-size: 48pt;
+  color: var(--theme-green);
+}
+
+h3 {font-size: 40pt;}
+h4 {font-size: 32pt;}
+h5 {font-size: 24pt;}
+h6 {font-size: 18pt;}
+
+/* Fixes */
+
+/*
+ Remove browser styling for buttons.
+ https://stackoverflow.com/a/45890842/3116659
+ */
+button, input[type="button"], input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
 }
