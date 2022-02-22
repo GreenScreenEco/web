@@ -11,7 +11,6 @@ export default function AboutUsPage() {
       </p>
       <h3>Team</h3>
       <EmployeeProfile fullName="Bridget Downey" positionTitle={"Co-Owner"} />
-      <EmployeeProfile fullName="Audrey Barber" positionTitle={"Co-Owner"} />
       <EmployeeProfile fullName="Winona Schroeer-Smith" positionTitle={"Engineering Lead"} />
     </Page>
   )
