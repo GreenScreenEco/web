@@ -1,22 +1,31 @@
 .navbar {
   width: 100%;
-  padding-right: 2rem;
-  background-color: #404040;
+  background-color: var(--theme-bg-more);
   display: flex;
   justify-content: flex-start;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 701px) {
   .navbar {
+    height: 2.7rem;
+    padding-right: 2rem;
     flex-direction: row;
     align-items: center;
   }
+
+  .navbarMenuToggle {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .navbarHiddenItem {
+    display: none;
   }
 }
 
@@ -31,9 +40,31 @@
   text-decoration: underline;
 }
 
+.navbarSiteTitleContainer {
+  /* As an item on its parent flex */
+  flex-grow: 1;
+  align-self: stretch;
+  margin: 0 0 0 0.5rem;
+  /* As a flex itself */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .navbarSiteTitle {
   color: var(--theme-green);
   font-size: 24pt;
   text-align: left;
   flex-grow: 1;
+}
+
+.navbarMenuToggle {
+  background-color: var(--theme-bg-most);
+  height: 2.7rem;
+}
+
+.navbarMenuToggle img {
+  padding: 0.15em;
+  height: 2.7rem;
 }
