@@ -43,6 +43,6 @@ type PageColumnProps = {
 
 export function PageColumn({children}: PageColumnProps) {
   return (
-    <div>{children}</div>
+    <section>{children}</section>
   )
 }
