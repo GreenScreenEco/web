@@ -2,7 +2,7 @@ import {ReactElement, ReactNode} from "react";
 import Head from "next/head";
 import styles from "./Page.module.css";
 
-export type Layout = "single" | "columns"
+export type Layout = "single" | null
 
 type PageProps = {
   title: string,
@@ -15,8 +15,6 @@ export function Page({title, nav, layout, children}: PageProps) {
   let mainClassName;
   if (layout === "single") {
     mainClassName = styles.single;
-  } else if (layout === "columns") {
-    mainClassName = styles.columns;
   } else {
     mainClassName = undefined;
   }
@@ -34,15 +32,5 @@ export function Page({title, nav, layout, children}: PageProps) {
         {children}
       </main>
     </>
-  )
-}
-
-type PageColumnProps = {
-  children: ReactNode,
-}
-
-export function PageColumn({children}: PageColumnProps) {
-  return (
-    <section>{children}</section>
   )
 }
