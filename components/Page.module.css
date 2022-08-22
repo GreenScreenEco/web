@@ -9,3 +9,16 @@
     margin: 0.5em;
   }
 }
+
+@media screen and (min-width: 1001px) {
+  .focused {
+    margin: 8vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .focused {
+    margin: 0.5em;
+  }
+}
+

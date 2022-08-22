@@ -29,7 +29,7 @@ export default function InstallPage() {
   }, [browserName]);
 
   return (
-    <Page title={"GreenScreen - Install Extension"} nav={<Navbar activePage={null} />} layout="single">
+    <Page title={"GreenScreen - Install Extension"} nav={<Navbar activePage={null} />} layout="simple">
       <h2>Install Our Extension</h2>
       {detectionState == "detecting" && <p>
         Detecting browser... please wait.

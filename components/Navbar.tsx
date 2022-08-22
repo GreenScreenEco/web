@@ -17,7 +17,7 @@ export default function Navbar({activePage}: Props) {
   const classForActivePage = (testPage: ActivePage): string => {
     return testPage === activePage ? styles.navbarActivePage : "";
   }
-  const classForCollapsibleItem = !menuOpen ? styles.navbarHiddenItem : "";
+  const classForCollapsibleItems = !menuOpen ? styles.navbarHiddenItem : "";
 
   return (
     <nav className={styles.navbar}>
@@ -27,9 +27,9 @@ export default function Navbar({activePage}: Props) {
           <img src="/hamburger_menu_icon.svg" alt="navigation menu"/>
         </Button>
       </div>
-      <Link href="/how-it-works" className={classNames(classForActivePage("how-it-works"), classForCollapsibleItem)}>How It Works</Link>
-      <Link href="/about-us" className={classNames(classForActivePage("about-us"), classForCollapsibleItem)}>About Us</Link>
-      <InstallButton style="simple" className={classForCollapsibleItem} />
+      <Link href="/how-it-works" className={classNames(classForActivePage("how-it-works"), classForCollapsibleItems)}>How It Works</Link>
+      <Link href="/about-us" className={classNames(classForActivePage("about-us"), classForCollapsibleItems)}>About Us</Link>
+      <InstallButton style="simple" className={classForCollapsibleItems} />
     </nav>
   );
 }

@@ -18,9 +18,9 @@
   --theme-green: #E6FECC;
   --theme-green-alt: #80C080;
   --theme-fg-most: #FFFFFF;
-  --theme-bg-medium: #666666;
-  --theme-bg-more: #404040;
-  --theme-bg-most: #202020;
+  --theme-bg-medium: #404040;
+  --theme-bg-more: #303030;
+  --theme-bg-most: #101010;
 }
 
 a {
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-h1 {
+h1, .signatureGradient {
   color: transparent;
   background: linear-gradient(125deg, var(--theme-green) 0%, var(--theme-green-alt) 100%);
   -webkit-background-clip: text;
@@ -63,9 +63,9 @@ h2 {
 @media screen and (min-width: 701px) {
   h1 {font-size: 60pt;}
   h2 {font-size: 48pt;}
-  h3 {font-size: 40pt;}
-  h4 {font-size: 32pt;}
-  h5 {font-size: 24pt;}
+  h3 {font-size: 36pt;}
+  h4 {font-size: 24pt;}
+  h5 {font-size: 20pt;}
   h6 {font-size: 18pt;}
 }
 

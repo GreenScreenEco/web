@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 export default function HowItWorksPage() {
   return (
-    <Page title="GreenScreen - How It Works" nav={<Navbar activePage="how-it-works" />} layout="single">
+    <Page title="GreenScreen - How It Works" nav={<Navbar activePage="how-it-works" />} layout="simple">
       <h2>How It Works</h2>
       <p>
         We provide a downloadable browser extension that will give you real time information about

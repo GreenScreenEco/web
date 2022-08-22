@@ -2,7 +2,7 @@ import {ReactElement, ReactNode} from "react";
 import Head from "next/head";
 import styles from "./Page.module.css";
 
-export type Layout = "single" | null
+export type Layout = "simple" | "focused" | null
 
 type PageProps = {
   title: string,
@@ -13,8 +13,10 @@ type PageProps = {
 
 export function Page({title, nav, layout, children}: PageProps) {
   let mainClassName;
-  if (layout === "single") {
+  if (layout === "simple") {
     mainClassName = styles.single;
+  } else if (layout === "focused") {
+    mainClassName = styles.focused;
   } else {
     mainClassName = undefined;
   }
