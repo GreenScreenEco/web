@@ -1,23 +1,27 @@
 @media screen and (min-width: 1001px) {
-  .single {
+  .single main {
     margin: 4em;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .single {
+  .single main {
     margin: 0.5em;
   }
 }
 
+.focused {
+  --theme-bg-more: var(--theme-bg-medium);
+}
+
 @media screen and (min-width: 1001px) {
-  .focused {
+  .focused main {
     margin: 8vw;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .focused {
+  .focused main {
     margin: 0.5em;
   }
 }

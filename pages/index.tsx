@@ -33,17 +33,14 @@ export default function RootPage() {
 
       <ColumnSection>
         <div>
-          <h1>Consciously Consume</h1>
+          <br/>
+          <h3 className={"signatureGradient"}>Consciously Consume</h3>
           <p>
-            Hold the companies you shop at accountable for sustainability.
+            Our browser extension gives you the power to purchase with intention.
           </p>
           <p>
-            We evaluate thousands of companies to give you real time, easy to access information about their
-            environmental practices.
-          </p>
-          <p>
-            Our sustainability score helps you make informed decisions when you browse or shop, with data sourced from a
-            variety of independent environmental research organizations.
+            See sustainability scores while you shop with our easy-to-use browser extension. We commit to providing you
+            with quality information to make independent decisions. We do not track you and we do not sell your information.
           </p>
           <p>
             Start consciously consuming today.

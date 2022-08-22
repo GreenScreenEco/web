@@ -12,17 +12,17 @@ type PageProps = {
 }
 
 export function Page({title, nav, layout, children}: PageProps) {
-  let mainClassName;
+  let pageClassName;
   if (layout === "simple") {
-    mainClassName = styles.single;
+    pageClassName = styles.single;
   } else if (layout === "focused") {
-    mainClassName = styles.focused;
+    pageClassName = styles.focused;
   } else {
-    mainClassName = undefined;
+    pageClassName = undefined;
   }
 
   return (
-    <>
+    <div className={pageClassName}>
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -30,9 +30,9 @@ export function Page({title, nav, layout, children}: PageProps) {
 
       {nav}
 
-      <main className={mainClassName}>
+      <main>
         {children}
       </main>
-    </>
+    </div>
   )
 }
