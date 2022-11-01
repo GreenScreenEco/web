@@ -7,4 +7,9 @@
   border-radius: 0.4em;
 }
 
+.buttonBorderless {
+   color: var(--theme-green);
+   padding: 0.15em 1em 0.15em 1em;
+ }
+
 .buttonPassthrough {}

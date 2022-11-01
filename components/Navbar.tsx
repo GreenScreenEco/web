@@ -5,7 +5,7 @@ import {useState} from "react";
 import classNames from "classnames";
 import Button from "./Button";
 
-export type ActivePage = "root" | "how-it-works" | "about-us" | null
+export type ActivePage = "root" | "how-it-works" | "about-us" | "search-companies" | null
 
 type Props = {
   activePage: ActivePage,
@@ -28,6 +28,7 @@ export default function Navbar({activePage}: Props) {
         </Button>
       </div>
       <Link href="/how-it-works" className={classNames(classForActivePage("how-it-works"), classForCollapsibleItems)}>How It Works</Link>
+      <Link href="/search-companies" className={classNames(classForActivePage("search-companies"), classForCollapsibleItems)}>Search Companies</Link>
       <Link href="/about-us" className={classNames(classForActivePage("about-us"), classForCollapsibleItems)}>About Us</Link>
       <InstallButton style="simple" className={classForCollapsibleItems} />
     </nav>

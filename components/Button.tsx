@@ -4,7 +4,7 @@ import {useRouter} from "next/router";
 import {UrlObject} from "url";
 import classNames from "classnames";
 
-export type ButtonStyle = "normal" | "passthrough";
+export type ButtonStyle = "normal" | "borderless" | "passthrough";
 
 type Props = {
   href?: UrlObject | string,
@@ -24,6 +24,8 @@ export default function Button({href, onClick, style, className, children}: Prop
   let buttonClassName;
   if (style === "normal" || style === undefined) {
     buttonClassName = styles.buttonNormal;
+  } else if (style === "borderless") {
+    buttonClassName = styles.buttonBorderless;
   } else if (style === "passthrough") {
     buttonClassName = styles.buttonPassthrough;
   } else {

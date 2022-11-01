@@ -1,0 +1,20 @@
+.companiesTable {
+  display: flex;
+  flex-direction: column;
+}
+
+.companyScoresForSource {
+  margin-left: 1em;
+}
+
+.companyScores {
+  display: flex;
+  flex-direction: row;
+}
+
+.companyScoreItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5em;
+}

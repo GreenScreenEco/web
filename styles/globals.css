@@ -92,3 +92,10 @@ button, input[type="button"], input[type="submit"], input[type="reset"] {
   font: inherit;
   cursor: pointer;
 }
+
+input[type="text"] {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+}
