@@ -15,6 +15,7 @@ export default function RootPage() {
         <h1>GreenScreen</h1>
         <h3>The power to purchase with intention.</h3>
         <p>We find the data on brand sustainability. You use it to power impactful purchases. An easy way to consciously consume.</p>
+        <br style={{marginBottom: "2em"}}/>
       </RowSection>
       <ColumnSection>
         <div>
