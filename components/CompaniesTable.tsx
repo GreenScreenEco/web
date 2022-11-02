@@ -157,7 +157,12 @@ function Company({company}: CompanyProps) {
   return (
     <div className={styles.company}>
       <h4>{company.name} - <span style={{color: mainScoreRating.color}}>{mainScore.value}</span></h4>
-      {scoresBySource.map(groupedScore => <ScoresForSource scoreSource={groupedScore.scoreSource} scores={groupedScore.scores} />)}
+      {scoresBySource.map(groupedScore =>
+        <ScoresForSource
+          key={groupedScore.scoreSource.identity}
+          scoreSource={groupedScore.scoreSource}
+          scores={groupedScore.scores}
+        />)}
     </div>
   )
 }

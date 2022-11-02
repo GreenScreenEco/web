@@ -8,6 +8,8 @@
 }
 
 .searchInput {
+  width: 1em;
+  padding-left: 0.3em;
   flex-grow: 1;
   color: var(--theme-fg-most);
   background-color: var(--theme-bg-medium);
